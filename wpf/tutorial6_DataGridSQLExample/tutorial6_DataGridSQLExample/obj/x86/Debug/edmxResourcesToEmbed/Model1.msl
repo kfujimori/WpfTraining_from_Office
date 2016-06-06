@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tacpmsModelStoreContainer" CdmEntityContainer="tacpmsEntities">
+    <EntitySetMapping Name="mst_broadcast_station">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_broadcast_station">
+        <MappingFragment StoreEntitySet="mst_broadcast_station">
+          <ScalarProperty Name="MEDIA_KBN" ColumnName="MEDIA_KBN" />
+          <ScalarProperty Name="BROADCASTING_STATION_CD" ColumnName="BROADCASTING_STATION_CD" />
+          <ScalarProperty Name="STATION_SYMBOL" ColumnName="STATION_SYMBOL" />
+          <ScalarProperty Name="STATION_KANJI_SYMBOL" ColumnName="STATION_KANJI_SYMBOL" />
+          <ScalarProperty Name="STATION_KANA_NM" ColumnName="STATION_KANA_NM" />
+          <ScalarProperty Name="STATION_KANJI_NM" ColumnName="STATION_KANJI_NM" />
+          <ScalarProperty Name="STATION_CUSTOMER_NUMBER_CD" ColumnName="STATION_CUSTOMER_NUMBER_CD" />
+          <ScalarProperty Name="ITEM_CD" ColumnName="ITEM_CD" />
+          <ScalarProperty Name="NET_SERIES_KBN" ColumnName="NET_SERIES_KBN" />
+          <ScalarProperty Name="CROSS_NET_SERIES_NNN_FLG" ColumnName="CROSS_NET_SERIES_NNN_FLG" />
+          <ScalarProperty Name="CROSS_NET_SERIES_JNN_FLG" ColumnName="CROSS_NET_SERIES_JNN_FLG" />
+          <ScalarProperty Name="CROSS_NET_SERIES_FNS_FLG" ColumnName="CROSS_NET_SERIES_FNS_FLG" />
+          <ScalarProperty Name="CROSS_NET_SERIES_ANN_FLG" ColumnName="CROSS_NET_SERIES_ANN_FLG" />
+          <ScalarProperty Name="CROSS_NET_SERIES_TXN_FLG" ColumnName="CROSS_NET_SERIES_TXN_FLG" />
+          <ScalarProperty Name="AREA_CD" ColumnName="AREA_CD" />
+          <ScalarProperty Name="VR_STATION" ColumnName="VR_STATION" />
+          <ScalarProperty Name="AREA_CD_VR" ColumnName="AREA_CD_VR" />
+          <ScalarProperty Name="CYCLE_HOUSEHOLD" ColumnName="CYCLE_HOUSEHOLD" />
+          <ScalarProperty Name="CYCLE_INDIVIDUAL" ColumnName="CYCLE_INDIVIDUAL" />
+          <ScalarProperty Name="TIME_RANK_TYPE_KBN" ColumnName="TIME_RANK_TYPE_KBN" />
+          <ScalarProperty Name="COMMISSION_RATE_W" ColumnName="COMMISSION_RATE_W" />
+          <ScalarProperty Name="COMMISSION_RATE_P" ColumnName="COMMISSION_RATE_P" />
+          <ScalarProperty Name="COMMISSION_RATE_N" ColumnName="COMMISSION_RATE_N" />
+          <ScalarProperty Name="COMMISSION_RATE_O" ColumnName="COMMISSION_RATE_O" />
+          <ScalarProperty Name="STATION_CATEGORY" ColumnName="STATION_CATEGORY" />
+          <ScalarProperty Name="TRANSMISSION_METHOD_KBN" ColumnName="TRANSMISSION_METHOD_KBN" />
+          <ScalarProperty Name="DIVIDE_KBN" ColumnName="DIVIDE_KBN" />
+          <ScalarProperty Name="DISPLAY_ORDER" ColumnName="DISPLAY_ORDER" />
+          <ScalarProperty Name="FAX_NUMBER" ColumnName="FAX_NUMBER" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mst_business_partner">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_business_partner">
+        <MappingFragment StoreEntitySet="mst_business_partner">
+          <ScalarProperty Name="CUSTOMER_CD" ColumnName="CUSTOMER_CD" />
+          <ScalarProperty Name="CUSTOMER_NM" ColumnName="CUSTOMER_NM" />
+          <ScalarProperty Name="CUSTOMER_OFFICIAL_NM" ColumnName="CUSTOMER_OFFICIAL_NM" />
+          <ScalarProperty Name="CUSTOMER_KANA_NM" ColumnName="CUSTOMER_KANA_NM" />
+          <ScalarProperty Name="POSTAL_CD" ColumnName="POSTAL_CD" />
+          <ScalarProperty Name="ADDRESS_1" ColumnName="ADDRESS_1" />
+          <ScalarProperty Name="ADDRESS_2" ColumnName="ADDRESS_2" />
+          <ScalarProperty Name="ADDRESS_3" ColumnName="ADDRESS_3" />
+          <ScalarProperty Name="PHONE_NUMBER" ColumnName="PHONE_NUMBER" />
+          <ScalarProperty Name="FAX_NUMBER" ColumnName="FAX_NUMBER" />
+          <ScalarProperty Name="ATTRIBUTE_CLIENT_FLG" ColumnName="ATTRIBUTE_CLIENT_FLG" />
+          <ScalarProperty Name="ATTRIBUTE_ADVERTISER_FLG" ColumnName="ATTRIBUTE_ADVERTISER_FLG" />
+          <ScalarProperty Name="ATTRIBUTE_PAYEE_FLG" ColumnName="ATTRIBUTE_PAYEE_FLG" />
+          <ScalarProperty Name="ATTRIBUTE_STATION_FLG" ColumnName="ATTRIBUTE_STATION_FLG" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mst_cd">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_cd">
+        <MappingFragment StoreEntitySet="mst_cd">
+          <ScalarProperty Name="BNR_CD" ColumnName="BNR_CD" />
+          <ScalarProperty Name="CD" ColumnName="CD" />
+          <ScalarProperty Name="CD_ABBREVIATION" ColumnName="CD_ABBREVIATION" />
+          <ScalarProperty Name="CD_NM" ColumnName="CD_NM" />
+          <ScalarProperty Name="CD_KANA_NM" ColumnName="CD_KANA_NM" />
+          <ScalarProperty Name="KBN_1_CD" ColumnName="KBN_1_CD" />
+          <ScalarProperty Name="KBN_2_CD" ColumnName="KBN_2_CD" />
+          <ScalarProperty Name="KBN_3_CD" ColumnName="KBN_3_CD" />
+          <ScalarProperty Name="DISPLAY_ORDER" ColumnName="DISPLAY_ORDER" />
+          <ScalarProperty Name="INITIAL_DISPLAY_FLG" ColumnName="INITIAL_DISPLAY_FLG" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mst_department">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_department">
+        <MappingFragment StoreEntitySet="mst_department">
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="DEPARTMENT_CD" ColumnName="DEPARTMENT_CD" />
+          <ScalarProperty Name="DEPARTMENT_NM" ColumnName="DEPARTMENT_NM" />
+          <ScalarProperty Name="DEPARTMENT_BRI_CD" ColumnName="DEPARTMENT_BRI_CD" />
+          <ScalarProperty Name="BEFORE_DEPARTMENT_CD" ColumnName="BEFORE_DEPARTMENT_CD" />
+          <ScalarProperty Name="BEFORE_DEPARTMENT_NM" ColumnName="BEFORE_DEPARTMENT_NM" />
+          <ScalarProperty Name="DEPARTMENT_NM_SHORT" ColumnName="DEPARTMENT_NM_SHORT" />
+          <ScalarProperty Name="UPPER_ORGANIZATION_CODE" ColumnName="UPPER_ORGANIZATION_CODE" />
+          <ScalarProperty Name="OLD_DEPARTMENT_CD" ColumnName="OLD_DEPARTMENT_CD" />
+          <ScalarProperty Name="SCM_COOPERATION_FLG" ColumnName="SCM_COOPERATION_FLG" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mst_item">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_item">
+        <MappingFragment StoreEntitySet="mst_item">
+          <ScalarProperty Name="ITEM_CD" ColumnName="ITEM_CD" />
+          <ScalarProperty Name="ITEM_NM" ColumnName="ITEM_NM" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mst_person_in_charge">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_person_in_charge">
+        <MappingFragment StoreEntitySet="mst_person_in_charge">
+          <ScalarProperty Name="PERSON_IN_CHARGE_CD" ColumnName="PERSON_IN_CHARGE_CD" />
+          <ScalarProperty Name="PERSON_IN_CHARGE_NM" ColumnName="PERSON_IN_CHARGE_NM" />
+          <ScalarProperty Name="PERSON_IN_CHARGE_TEL" ColumnName="PERSON_IN_CHARGE_TEL" />
+          <ScalarProperty Name="PERSON_IN_CHARGE_FAX" ColumnName="PERSON_IN_CHARGE_FAX" />
+          <ScalarProperty Name="BELONG_DEPARTMENT_ID" ColumnName="BELONG_DEPARTMENT_ID" />
+          <ScalarProperty Name="DEPARTMENT_BRI_CD" ColumnName="DEPARTMENT_BRI_CD" />
+          <ScalarProperty Name="SCM_COOPERATION_FLG" ColumnName="SCM_COOPERATION_FLG" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mst_user_group">
+      <EntityTypeMapping TypeName="tacpmsModel.mst_user_group">
+        <MappingFragment StoreEntitySet="mst_user_group">
+          <ScalarProperty Name="USER_GROUP_ID" ColumnName="USER_GROUP_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ord_contact_form_data">
+      <EntityTypeMapping TypeName="tacpmsModel.ord_contact_form_data">
+        <MappingFragment StoreEntitySet="ord_contact_form_data">
+          <ScalarProperty Name="MEDIA_KBN" ColumnName="MEDIA_KBN" />
+          <ScalarProperty Name="CONTACT_FORM_NUMBER" ColumnName="CONTACT_FORM_NUMBER" />
+          <ScalarProperty Name="DRAFT_LEVEL_ID" ColumnName="DRAFT_LEVEL_ID" />
+          <ScalarProperty Name="ORDER_NUMBER" ColumnName="ORDER_NUMBER" />
+          <ScalarProperty Name="PROGRESS_KBN" ColumnName="PROGRESS_KBN" />
+          <ScalarProperty Name="CLIENT_CD" ColumnName="CLIENT_CD" />
+          <ScalarProperty Name="SALES_DEPARTMENT_ID" ColumnName="SALES_DEPARTMENT_ID" />
+          <ScalarProperty Name="SALESPERSON_CD" ColumnName="SALESPERSON_CD" />
+          <ScalarProperty Name="MEDIA_DEPARTMENT_ID" ColumnName="MEDIA_DEPARTMENT_ID" />
+          <ScalarProperty Name="MEDIA_PERSONNEL_CD" ColumnName="MEDIA_PERSONNEL_CD" />
+          <ScalarProperty Name="CM_PERSONNEL_CD" ColumnName="CM_PERSONNEL_CD" />
+          <ScalarProperty Name="RECEPTION_DATE" ColumnName="RECEPTION_DATE" />
+          <ScalarProperty Name="SUBJECT" ColumnName="SUBJECT" />
+          <ScalarProperty Name="ORDER_AMOUNT" ColumnName="ORDER_AMOUNT" />
+          <ScalarProperty Name="ORDERS_KBN" ColumnName="ORDERS_KBN" />
+          <ScalarProperty Name="BROADCAST_PERIOD_START" ColumnName="BROADCAST_PERIOD_START" />
+          <ScalarProperty Name="BROADCAST_PERIOD_END" ColumnName="BROADCAST_PERIOD_END" />
+          <ScalarProperty Name="MEDIUM_UNPLUG_PERIOD_FLG" ColumnName="MEDIUM_UNPLUG_PERIOD_FLG" />
+          <ScalarProperty Name="CM_NUMBER_OF_SECONDS_1" ColumnName="CM_NUMBER_OF_SECONDS_1" />
+          <ScalarProperty Name="CM_NUMBER_OF_SECONDS_2" ColumnName="CM_NUMBER_OF_SECONDS_2" />
+          <ScalarProperty Name="CM_NUMBER_OF_SECONDS_3" ColumnName="CM_NUMBER_OF_SECONDS_3" />
+          <ScalarProperty Name="TARGET_PATTERN_CD" ColumnName="TARGET_PATTERN_CD" />
+          <ScalarProperty Name="DEADLINE_DATE" ColumnName="DEADLINE_DATE" />
+          <ScalarProperty Name="FILING_DATE" ColumnName="FILING_DATE" />
+          <ScalarProperty Name="TRADE_DESIGNATION" ColumnName="TRADE_DESIGNATION" />
+          <ScalarProperty Name="ADVERTISERS_CD" ColumnName="ADVERTISERS_CD" />
+          <ScalarProperty Name="TAKE_HOW_KBN" ColumnName="TAKE_HOW_KBN" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_TYPE_SIZE_YEAR" ColumnName="HOUSEHOLD_TOSHIZU_TYPE_SIZE_YEAR" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_TYPE_SIZE" ColumnName="HOUSEHOLD_TOSHIZU_TYPE_SIZE" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_TYPE_SIZE_DATE" ColumnName="HOUSEHOLD_TOSHIZU_TYPE_SIZE_DATE" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_TYPE_KBN" ColumnName="HOUSEHOLD_TOSHIZU_TYPE_KBN" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_TIME_KBN" ColumnName="HOUSEHOLD_TOSHIZU_TIME_KBN" />
+          <ScalarProperty Name="HOUSEHOLD_OTHER_TYPE_SIZE_DATE" ColumnName="HOUSEHOLD_OTHER_TYPE_SIZE_DATE" />
+          <ScalarProperty Name="HOUSEHOLD_OTHER_TIME_KBN" ColumnName="HOUSEHOLD_OTHER_TIME_KBN" />
+          <ScalarProperty Name="INDIVIDUAL_TOHANMEI_TYPE_SIZE_YEAR" ColumnName="INDIVIDUAL_TOHANMEI_TYPE_SIZE_YEAR" />
+          <ScalarProperty Name="INDIVIDUAL_TOHANMEI_TYPE_SIZE" ColumnName="INDIVIDUAL_TOHANMEI_TYPE_SIZE" />
+          <ScalarProperty Name="INDIVIDUAL_TOHANMEI_TYPE_SIZE_DATE" ColumnName="INDIVIDUAL_TOHANMEI_TYPE_SIZE_DATE" />
+          <ScalarProperty Name="INDIVIDUAL_TOHANMEI_TYPE_KBN" ColumnName="INDIVIDUAL_TOHANMEI_TYPE_KBN" />
+          <ScalarProperty Name="INDIVIDUAL_KYUSHU_TYPE_SIZE_DATE" ColumnName="INDIVIDUAL_KYUSHU_TYPE_SIZE_DATE" />
+          <ScalarProperty Name="INDIVIDUAL_SATSUSHIZU_TYPE_SIZE_DATE" ColumnName="INDIVIDUAL_SATSUSHIZU_TYPE_SIZE_DATE" />
+          <ScalarProperty Name="INDIVIDUAL_OTHER_TYPE_SIZE_DATE" ColumnName="INDIVIDUAL_OTHER_TYPE_SIZE_DATE" />
+          <ScalarProperty Name="INDIVIDUAL_OTHER_TIME_KBN" ColumnName="INDIVIDUAL_OTHER_TIME_KBN" />
+          <ScalarProperty Name="WEIGHT_OF_30_SECONDS" ColumnName="WEIGHT_OF_30_SECONDS" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_USE_KBN" ColumnName="HOUSEHOLD_TOSHIZU_USE_KBN" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_REFERENCE_DATE" ColumnName="HOUSEHOLD_TOSHIZU_REFERENCE_DATE" />
+          <ScalarProperty Name="HOUSEHOLD_TOSHIZU_USE_DATE" ColumnName="HOUSEHOLD_TOSHIZU_USE_DATE" />
+          <ScalarProperty Name="INDIVIDUAL_TOMEI_METHOD_KBN" ColumnName="INDIVIDUAL_TOMEI_METHOD_KBN" />
+          <ScalarProperty Name="INDIVIDUAL_TOMEI_NUMBER_OF_TIMES" ColumnName="INDIVIDUAL_TOMEI_NUMBER_OF_TIMES" />
+          <ScalarProperty Name="INDIVIDUAL_KYUSHU_METHOD_KBN" ColumnName="INDIVIDUAL_KYUSHU_METHOD_KBN" />
+          <ScalarProperty Name="INDIVIDUAL_KYUSHU_NUMBER_OF_TIMES" ColumnName="INDIVIDUAL_KYUSHU_NUMBER_OF_TIMES" />
+          <ScalarProperty Name="INDIVIDUAL_SATSUSHIZU_METHOD_KBN" ColumnName="INDIVIDUAL_SATSUSHIZU_METHOD_KBN" />
+          <ScalarProperty Name="INDIVIDUAL_SATSUSHIZU_NUMBER_OF_TIMES" ColumnName="INDIVIDUAL_SATSUSHIZU_NUMBER_OF_TIMES" />
+          <ScalarProperty Name="INDIVIDUAL_OTHER_METHOD_KBN" ColumnName="INDIVIDUAL_OTHER_METHOD_KBN" />
+          <ScalarProperty Name="INDIVIDUAL_OTHER_NUMBER_OF_TIMES" ColumnName="INDIVIDUAL_OTHER_NUMBER_OF_TIMES" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="PROGRAM_NM" ColumnName="PROGRAM_NM" />
+          <ScalarProperty Name="NET_SERIES" ColumnName="NET_SERIES" />
+          <ScalarProperty Name="CREATED_DATE" ColumnName="CREATED_DATE" />
+          <ScalarProperty Name="HANDLING_CLASSIFICATION_KBN" ColumnName="HANDLING_CLASSIFICATION_KBN" />
+          <ScalarProperty Name="RATES_KBN" ColumnName="RATES_KBN" />
+          <ScalarProperty Name="ORIGINATING_STATION_CD" ColumnName="ORIGINATING_STATION_CD" />
+          <ScalarProperty Name="TYPE_KBN" ColumnName="TYPE_KBN" />
+          <ScalarProperty Name="CM_TYPE_KBN" ColumnName="CM_TYPE_KBN" />
+          <ScalarProperty Name="PROGRESSIVE_WAY_KBN" ColumnName="PROGRESSIVE_WAY_KBN" />
+          <ScalarProperty Name="COOPERATION_STATE_KBN" ColumnName="COOPERATION_STATE_KBN" />
+          <ScalarProperty Name="TARGET_VIEWING_CD1" ColumnName="TARGET_VIEWING_CD1" />
+          <ScalarProperty Name="TARGET_VIEWING_CD2" ColumnName="TARGET_VIEWING_CD2" />
+          <ScalarProperty Name="TARGET_VIEWING_CD3" ColumnName="TARGET_VIEWING_CD3" />
+          <ScalarProperty Name="TARGET_VIEWING_CD4" ColumnName="TARGET_VIEWING_CD4" />
+          <ScalarProperty Name="BROADCASTING_STATION_NUMBER" ColumnName="BROADCASTING_STATION_NUMBER" />
+          <ScalarProperty Name="SONOTA_HEAD_NUM1" ColumnName="SONOTA_HEAD_NUM1" />
+          <ScalarProperty Name="HANDLING_CLASSIFICATION" ColumnName="HANDLING_CLASSIFICATION" />
+          <ScalarProperty Name="OLD_CONTACT_FORM_NUMBER" ColumnName="OLD_CONTACT_FORM_NUMBER" />
+          <ScalarProperty Name="TRANSMISSION_STATUS" ColumnName="TRANSMISSION_STATUS" />
+          <ScalarProperty Name="MOD_VR_PERIOD_START" ColumnName="MOD_VR_PERIOD_START" />
+          <ScalarProperty Name="MOD_VR_PERIOD_END" ColumnName="MOD_VR_PERIOD_END" />
+          <ScalarProperty Name="PERIOD_CHANGE_FLG" ColumnName="PERIOD_CHANGE_FLG" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ord_contact_form_data_target">
+      <EntityTypeMapping TypeName="tacpmsModel.ord_contact_form_data_target">
+        <MappingFragment StoreEntitySet="ord_contact_form_data_target">
+          <ScalarProperty Name="MEDIA_KBN" ColumnName="MEDIA_KBN" />
+          <ScalarProperty Name="CONTACT_FORM_NUMBER" ColumnName="CONTACT_FORM_NUMBER" />
+          <ScalarProperty Name="DRAFT_LEVEL_ID" ColumnName="DRAFT_LEVEL_ID" />
+          <ScalarProperty Name="VIEWING_RATE_TARGET_CD" ColumnName="VIEWING_RATE_TARGET_CD" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_airtime_data">
+      <EntityTypeMapping TypeName="tacpmsModel.spt_airtime_data">
+        <MappingFragment StoreEntitySet="spt_airtime_data">
+          <ScalarProperty Name="MEDIA_KBN" ColumnName="MEDIA_KBN" />
+          <ScalarProperty Name="CONTACT_FORM_NUMBER" ColumnName="CONTACT_FORM_NUMBER" />
+          <ScalarProperty Name="DRAFT_LEVEL_ID" ColumnName="DRAFT_LEVEL_ID" />
+          <ScalarProperty Name="BROADCASTING_STATION_CD" ColumnName="BROADCASTING_STATION_CD" />
+          <ScalarProperty Name="STATION_DRAFT_LEVEL_ID" ColumnName="STATION_DRAFT_LEVEL_ID" />
+          <ScalarProperty Name="BROADCAST_DATE" ColumnName="BROADCAST_DATE" />
+          <ScalarProperty Name="DAY_KBN" ColumnName="DAY_KBN" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="SPOT_TYPE_KBN" ColumnName="SPOT_TYPE_KBN" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="VIEWING_RATE_TARGET_CD" ColumnName="VIEWING_RATE_TARGET_CD" />
+          <ScalarProperty Name="VIEWING_RATE" ColumnName="VIEWING_RATE" />
+          <ScalarProperty Name="CM_NUMBER_OF_SECONDS_1" ColumnName="CM_NUMBER_OF_SECONDS_1" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spt_airtime_data_expand">
+      <EntityTypeMapping TypeName="tacpmsModel.spt_airtime_data_expand">
+        <MappingFragment StoreEntitySet="spt_airtime_data_expand">
+          <ScalarProperty Name="MEDIA_KBN" ColumnName="MEDIA_KBN" />
+          <ScalarProperty Name="CONTACT_FORM_NUMBER" ColumnName="CONTACT_FORM_NUMBER" />
+          <ScalarProperty Name="DRAFT_LEVEL_ID" ColumnName="DRAFT_LEVEL_ID" />
+          <ScalarProperty Name="BROADCASTING_STATION_CD" ColumnName="BROADCASTING_STATION_CD" />
+          <ScalarProperty Name="STATION_DRAFT_LEVEL_ID" ColumnName="STATION_DRAFT_LEVEL_ID" />
+          <ScalarProperty Name="BROADCAST_DATE" ColumnName="BROADCAST_DATE" />
+          <ScalarProperty Name="DAY_KBN" ColumnName="DAY_KBN" />
+          <ScalarProperty Name="START_TIME" ColumnName="START_TIME" />
+          <ScalarProperty Name="END_TIME" ColumnName="END_TIME" />
+          <ScalarProperty Name="SPOT_TYPE_KBN" ColumnName="SPOT_TYPE_KBN" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="WAK_SUB_NUMBER" ColumnName="WAK_SUB_NUMBER" />
+          <ScalarProperty Name="TIME_RANK_KBN" ColumnName="TIME_RANK_KBN" />
+          <ScalarProperty Name="TIME_RANK_KBN_EXCEPTION" ColumnName="TIME_RANK_KBN_EXCEPTION" />
+          <ScalarProperty Name="TIME_RANK_KBN_WRITE" ColumnName="TIME_RANK_KBN_WRITE" />
+          <ScalarProperty Name="VIEWING_RATE" ColumnName="VIEWING_RATE" />
+          <ScalarProperty Name="VIEWING_RATE_EXCEPTION" ColumnName="VIEWING_RATE_EXCEPTION" />
+          <ScalarProperty Name="VIEWING_RATE_WRITE" ColumnName="VIEWING_RATE_WRITE" />
+          <ScalarProperty Name="VIEWING_RATE_EXCEPTION_TIME" ColumnName="VIEWING_RATE_EXCEPTION_TIME" />
+          <ScalarProperty Name="CM_NUMBER_OF_SECONDS_1" ColumnName="CM_NUMBER_OF_SECONDS_1" />
+          <ScalarProperty Name="MATERIAL_SYMBOL" ColumnName="MATERIAL_SYMBOL" />
+          <ScalarProperty Name="AIRTIME_KBN" ColumnName="AIRTIME_KBN" />
+          <ScalarProperty Name="REGULAR_FEE" ColumnName="REGULAR_FEE" />
+          <ScalarProperty Name="PAUSE_FLG" ColumnName="PAUSE_FLG" />
+          <ScalarProperty Name="PROGRAM_INFORMATION" ColumnName="PROGRAM_INFORMATION" />
+          <ScalarProperty Name="MOVE_REASON" ColumnName="MOVE_REASON" />
+          <ScalarProperty Name="STATION_SYMBOL" ColumnName="STATION_SYMBOL" />
+          <ScalarProperty Name="AREA_CD" ColumnName="AREA_CD" />
+          <ScalarProperty Name="AIRTIME_CHAGE_FLG" ColumnName="AIRTIME_CHAGE_FLG" />
+          <ScalarProperty Name="START_TIME_ERR_FLG" ColumnName="START_TIME_ERR_FLG" />
+          <ScalarProperty Name="BROADCAST_DATE_ERR_FLG" ColumnName="BROADCAST_DATE_ERR_FLG" />
+          <ScalarProperty Name="OTHER_ERR_FLG" ColumnName="OTHER_ERR_FLG" />
+          <ScalarProperty Name="SEQ_DENSOU" ColumnName="SEQ_DENSOU" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_USER" ColumnName="CREATE_USER" />
+          <ScalarProperty Name="UPDATE_DATE" ColumnName="UPDATE_DATE" />
+          <ScalarProperty Name="UPDATE_USER" ColumnName="UPDATE_USER" />
+          <ScalarProperty Name="DELETE_FLG" ColumnName="DELETE_FLG" />
+          <ScalarProperty Name="VERSION" ColumnName="VERSION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

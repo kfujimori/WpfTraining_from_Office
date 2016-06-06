@@ -1,0 +1,43 @@
+﻿<Window x:Class="tutorial3_DataBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:tutorial3_DataBindingDemo"
+        Title="MainWindow" Height="300" Width="300">
+
+    <Window.Resources>
+
+        <local:StudentList x:Key="studentCollection">
+            <local:Student StudentName="1111111" IsEnrolled="false"/>
+            <local:Student StudentName="222222" IsEnrolled="true"/>
+            <local:Student StudentName="333" IsEnrolled="false"/>
+            <local:Student StudentName="444444444" IsEnrolled="true"/>
+        </local:StudentList>
+
+        
+        <local:BoolToBrushConverter x:Key="boolToBrushConverter"/>
+
+        <!-- create a DataTemplate to format my data in the ListBox control. -->
+        <!-- in this case, the DataTemplate uses a value converter to display a Boolean property as a colored square. -->
+        <DataTemplate x:Key="listBoxTemplate">
+            <StackPanel Orientation="Horizontal" >
+
+                <!-- color box -->
+                <Rectangle Fill="{Binding Path=IsEnrolled, Converter={StaticResource boolToBrushConverter}}"
+                           Height="10" 
+                           Width="10" 
+                           Margin="0,0,5,0" />
+                <!-- student name -->
+                <TextBlock Text="{Binding Path=StudentName}" />
+            </StackPanel>
+        </DataTemplate>
+
+    </Window.Resources>
+    
+    <Grid>
+        <ListBox Name="listBox1"
+                 ItemsSource="{Binding Source={StaticResource studentCollection}}"
+                 HorizontalAlignment="Stretch"
+                 VerticalAlignment="Stretch"
+                 ItemTemplate="{StaticResource listBoxTemplate}" />
+    </Grid>
+</Window>

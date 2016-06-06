@@ -1,0 +1,10 @@
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\bin\Debug\MySqlAndLinq.exe.config
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\bin\Debug\MySqlAndLinq.exe
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\bin\Debug\MySqlAndLinq.pdb
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\MySqlAndLinq.Form1.resources
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\MySqlAndLinq.Properties.Resources.resources
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\MySqlAndLinq.exe
+C:\dev\vs2010\wform\MySqlAndLinq\MySqlAndLinq\obj\x86\Debug\MySqlAndLinq.pdb

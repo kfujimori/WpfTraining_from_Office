@@ -1,0 +1,14 @@
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\bin\Debug\tutorial4_DataBindingDemo.exe
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\bin\Debug\tutorial4_DataBindingDemo.pdb
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\MainWindow.g.cs
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\App.g.cs
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\tutorial4_DataBindingDemo_MarkupCompile.cache
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\MainWindow.baml
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\tutorial4_DataBindingDemo.g.resources
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\tutorial4_DataBindingDemo.Properties.Resources.resources
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\tutorial4_DataBindingDemo.exe
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\tutorial4_DataBindingDemo.pdb
+C:\dev\vs2010\wpf\tutorial4_DataBindingDemo\tutorial4_DataBindingDemo\obj\x86\Debug\tutorial4_DataBindingDemo_MarkupCompile.lref

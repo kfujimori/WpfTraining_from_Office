@@ -1,0 +1,9 @@
+C:\dev\vs2010\wform\conMySQL\conMySQL\bin\Debug\conMySQL.exe
+C:\dev\vs2010\wform\conMySQL\conMySQL\bin\Debug\conMySQL.pdb
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\conMySQL.Form1.resources
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\conMySQL.Properties.Resources.resources
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\conMySQL.exe
+C:\dev\vs2010\wform\conMySQL\conMySQL\obj\x86\Debug\conMySQL.pdb

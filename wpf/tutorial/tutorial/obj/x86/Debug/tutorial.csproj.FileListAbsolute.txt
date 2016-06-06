@@ -1,0 +1,15 @@
+C:\dev\vs2010\wpf\tutorial\tutorial\bin\Debug\tutorial.exe
+C:\dev\vs2010\wpf\tutorial\tutorial\bin\Debug\tutorial.pdb
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\MainWindow.baml
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\MainWindow.g.cs
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\App.g.cs
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\tutorial_MarkupCompile.cache
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\tutorial.g.resources
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\tutorial.Properties.Resources.resources
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\tutorial.exe
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\tutorial.pdb
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\dev\vs2010\wpf\tutorial\tutorial\obj\x86\Debug\tutorial_MarkupCompile.lref

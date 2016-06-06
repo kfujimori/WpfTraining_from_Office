@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tacpmsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="tacpmsEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="customers" EntityType="tacpmsModel.customers" />
+    <EntitySet Name="dept" EntityType="tacpmsModel.dept" />
+    <EntitySet Name="employee" EntityType="tacpmsModel.employee" />
+    <EntitySet Name="mst_broadcast_station" EntityType="tacpmsModel.mst_broadcast_station" />
+    <EntitySet Name="mst_business_partner" EntityType="tacpmsModel.mst_business_partner" />
+    <EntitySet Name="mst_cd" EntityType="tacpmsModel.mst_cd" />
+    <EntitySet Name="mst_department" EntityType="tacpmsModel.mst_department" />
+    <EntitySet Name="mst_household_population_data" EntityType="tacpmsModel.mst_household_population_data" />
+    <EntitySet Name="mst_item" EntityType="tacpmsModel.mst_item" />
+    <EntitySet Name="mst_person_in_charge" EntityType="tacpmsModel.mst_person_in_charge" />
+    <EntitySet Name="mst_target_data" EntityType="tacpmsModel.mst_target_data" />
+    <EntitySet Name="mst_user" EntityType="tacpmsModel.mst_user" />
+    <EntitySet Name="mst_user_group" EntityType="tacpmsModel.mst_user_group" />
+    <EntitySet Name="ord_contact_form_data" EntityType="tacpmsModel.ord_contact_form_data" />
+    <EntitySet Name="ord_contact_form_data_target" EntityType="tacpmsModel.ord_contact_form_data_target" />
+    <EntitySet Name="ord_station_data" EntityType="tacpmsModel.ord_station_data" />
+    <EntitySet Name="ord_station_data_target" EntityType="tacpmsModel.ord_station_data_target" />
+    <EntitySet Name="spt_airtime_data" EntityType="tacpmsModel.spt_airtime_data" />
+    <EntitySet Name="spt_airtime_data_expand" EntityType="tacpmsModel.spt_airtime_data_expand" />
+  </EntityContainer>
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="first_name" Type="String" Nullable="false" />
+    <Property Name="last_name" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dept">
+    <Key>
+      <PropertyRef Name="dept_no" />
+    </Key>
+    <Property Name="dept_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dept_name" Type="String" />
+  </EntityType>
+  <EntityType Name="employee">
+    <Key>
+      <PropertyRef Name="emp_no" />
+    </Key>
+    <Property Name="emp_no" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="emp_name" Type="String" Nullable="false" />
+    <Property Name="salary" Type="Int32" />
+    <Property Name="dept_no" Type="Int32" />
+    <Property Name="start_date" Type="DateTime" />
+    <Property Name="end_date" Type="DateTime" />
+    <Property Name="emp_type" Type="String" />
+  </EntityType>
+  <EntityType Name="mst_broadcast_station">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="BROADCASTING_STATION_CD" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="BROADCASTING_STATION_CD" Type="String" Nullable="false" />
+    <Property Name="STATION_SYMBOL" Type="String" />
+    <Property Name="STATION_KANJI_SYMBOL" Type="String" />
+    <Property Name="STATION_KANA_NM" Type="String" />
+    <Property Name="STATION_KANJI_NM" Type="String" />
+    <Property Name="STATION_CUSTOMER_NUMBER_CD" Type="String" />
+    <Property Name="ITEM_CD" Type="String" />
+    <Property Name="NET_SERIES_KBN" Type="String" />
+    <Property Name="CROSS_NET_SERIES_NNN_FLG" Type="String" />
+    <Property Name="CROSS_NET_SERIES_JNN_FLG" Type="String" />
+    <Property Name="CROSS_NET_SERIES_FNS_FLG" Type="String" />
+    <Property Name="CROSS_NET_SERIES_ANN_FLG" Type="String" />
+    <Property Name="CROSS_NET_SERIES_TXN_FLG" Type="String" />
+    <Property Name="AREA_CD" Type="String" />
+    <Property Name="VR_STATION" Type="String" />
+    <Property Name="AREA_CD_VR" Type="String" />
+    <Property Name="CYCLE_HOUSEHOLD" Type="String" />
+    <Property Name="CYCLE_INDIVIDUAL" Type="String" />
+    <Property Name="TIME_RANK_TYPE_KBN" Type="String" />
+    <Property Name="COMMISSION_RATE_W" Type="Decimal" />
+    <Property Name="COMMISSION_RATE_P" Type="Decimal" />
+    <Property Name="COMMISSION_RATE_N" Type="Decimal" />
+    <Property Name="COMMISSION_RATE_O" Type="Decimal" />
+    <Property Name="STATION_CATEGORY" Type="String" />
+    <Property Name="TRANSMISSION_METHOD_KBN" Type="String" />
+    <Property Name="DIVIDE_KBN" Type="String" />
+    <Property Name="DISPLAY_ORDER" Type="Int32" />
+    <Property Name="FAX_NUMBER" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" />
+  </EntityType>
+  <EntityType Name="mst_business_partner">
+    <Key>
+      <PropertyRef Name="CUSTOMER_CD" />
+    </Key>
+    <Property Name="CUSTOMER_CD" Type="String" Nullable="false" />
+    <Property Name="CUSTOMER_NM" Type="String" />
+    <Property Name="CUSTOMER_OFFICIAL_NM" Type="String" />
+    <Property Name="CUSTOMER_KANA_NM" Type="String" />
+    <Property Name="POSTAL_CD" Type="String" />
+    <Property Name="ADDRESS_1" Type="String" />
+    <Property Name="ADDRESS_2" Type="String" />
+    <Property Name="ADDRESS_3" Type="String" />
+    <Property Name="PHONE_NUMBER" Type="String" />
+    <Property Name="FAX_NUMBER" Type="String" />
+    <Property Name="ATTRIBUTE_CLIENT_FLG" Type="String" />
+    <Property Name="ATTRIBUTE_ADVERTISER_FLG" Type="String" />
+    <Property Name="ATTRIBUTE_PAYEE_FLG" Type="String" />
+    <Property Name="ATTRIBUTE_STATION_FLG" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_cd">
+    <Key>
+      <PropertyRef Name="BNR_CD" />
+      <PropertyRef Name="CD" />
+    </Key>
+    <Property Name="BNR_CD" Type="String" Nullable="false" />
+    <Property Name="CD" Type="String" Nullable="false" />
+    <Property Name="CD_ABBREVIATION" Type="String" />
+    <Property Name="CD_NM" Type="String" />
+    <Property Name="CD_KANA_NM" Type="String" />
+    <Property Name="KBN_1_CD" Type="String" />
+    <Property Name="KBN_2_CD" Type="String" />
+    <Property Name="KBN_3_CD" Type="String" />
+    <Property Name="DISPLAY_ORDER" Type="Int32" />
+    <Property Name="INITIAL_DISPLAY_FLG" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_department">
+    <Key>
+      <PropertyRef Name="DEPARTMENT_ID" />
+    </Key>
+    <Property Name="DEPARTMENT_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DEPARTMENT_CD" Type="String" />
+    <Property Name="DEPARTMENT_NM" Type="String" />
+    <Property Name="DEPARTMENT_BRI_CD" Type="String" />
+    <Property Name="BEFORE_DEPARTMENT_CD" Type="String" />
+    <Property Name="BEFORE_DEPARTMENT_NM" Type="String" />
+    <Property Name="DEPARTMENT_NM_SHORT" Type="String" />
+    <Property Name="UPPER_ORGANIZATION_CODE" Type="String" />
+    <Property Name="OLD_DEPARTMENT_CD" Type="String" />
+    <Property Name="SCM_COOPERATION_FLG" Type="String" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_household_population_data">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="BROADCASTING_STATION_CD" />
+      <PropertyRef Name="APPLICATION_START_DATE" />
+      <PropertyRef Name="APPLICATION_END_DATE" />
+      <PropertyRef Name="SURVEY_YEARS" />
+      <PropertyRef Name="VIEWING_RATE_TARGET_CD" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="BROADCASTING_STATION_CD" Type="String" Nullable="false" />
+    <Property Name="APPLICATION_START_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="APPLICATION_END_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="SURVEY_YEARS" Type="Int32" Nullable="false" />
+    <Property Name="VIEWING_RATE_TARGET_CD" Type="String" Nullable="false" />
+    <Property Name="HOUSEHOLD_POPULATION_NUMBER" Type="Decimal" />
+    <Property Name="STATION_SYMBOL" Type="String" />
+    <Property Name="AREA_CD" Type="String" />
+    <Property Name="TARGET_PATTERN_CD" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_item">
+    <Key>
+      <PropertyRef Name="ITEM_CD" />
+    </Key>
+    <Property Name="ITEM_CD" Type="String" Nullable="false" />
+    <Property Name="ITEM_NM" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_person_in_charge">
+    <Key>
+      <PropertyRef Name="PERSON_IN_CHARGE_CD" />
+    </Key>
+    <Property Name="PERSON_IN_CHARGE_CD" Type="String" Nullable="false" />
+    <Property Name="PERSON_IN_CHARGE_NM" Type="String" />
+    <Property Name="PERSON_IN_CHARGE_TEL" Type="String" />
+    <Property Name="PERSON_IN_CHARGE_FAX" Type="String" />
+    <Property Name="BELONG_DEPARTMENT_ID" Type="Int32" />
+    <Property Name="DEPARTMENT_BRI_CD" Type="String" />
+    <Property Name="SCM_COOPERATION_FLG" Type="String" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_target_data">
+    <Key>
+      <PropertyRef Name="PATTERN" />
+    </Key>
+    <Property Name="PATTERN" Type="Int32" Nullable="false" />
+    <Property Name="ZONE1" Type="Int32" />
+    <Property Name="ZONE2" Type="Int32" />
+    <Property Name="ZONE3" Type="Int32" />
+    <Property Name="ZONE4" Type="Int32" />
+    <Property Name="ZONE5" Type="Int32" />
+    <Property Name="ZONE6" Type="Int32" />
+    <Property Name="ZONE7" Type="Int32" />
+    <Property Name="ZONE8" Type="Int32" />
+    <Property Name="ZONE9" Type="Int32" />
+    <Property Name="ZONE10" Type="Int32" />
+  </EntityType>
+  <EntityType Name="mst_user">
+    <Key>
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_ID" Type="String" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" />
+    <Property Name="PERSON_IN_CHARGE_CD" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="INVALID_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="mst_user_group">
+    <Key>
+      <PropertyRef Name="USER_GROUP_ID" />
+      <PropertyRef Name="USER_ID" />
+    </Key>
+    <Property Name="USER_GROUP_ID" Type="String" Nullable="false" />
+    <Property Name="USER_ID" Type="String" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ord_contact_form_data">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="CONTACT_FORM_NUMBER" />
+      <PropertyRef Name="DRAFT_LEVEL_ID" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="CONTACT_FORM_NUMBER" Type="String" Nullable="false" />
+    <Property Name="DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="ORDER_NUMBER" Type="String" />
+    <Property Name="PROGRESS_KBN" Type="String" />
+    <Property Name="CLIENT_CD" Type="String" />
+    <Property Name="SALES_DEPARTMENT_ID" Type="Int32" />
+    <Property Name="SALESPERSON_CD" Type="String" />
+    <Property Name="MEDIA_DEPARTMENT_ID" Type="Int32" />
+    <Property Name="MEDIA_PERSONNEL_CD" Type="String" />
+    <Property Name="CM_PERSONNEL_CD" Type="String" />
+    <Property Name="RECEPTION_DATE" Type="DateTime" />
+    <Property Name="SUBJECT" Type="String" />
+    <Property Name="ORDER_AMOUNT" Type="Decimal" />
+    <Property Name="ORDERS_KBN" Type="String" />
+    <Property Name="BROADCAST_PERIOD_START" Type="DateTime" />
+    <Property Name="BROADCAST_PERIOD_END" Type="DateTime" />
+    <Property Name="MEDIUM_UNPLUG_PERIOD_FLG" Type="String" />
+    <Property Name="CM_NUMBER_OF_SECONDS_1" Type="Int32" />
+    <Property Name="CM_NUMBER_OF_SECONDS_2" Type="Int32" />
+    <Property Name="CM_NUMBER_OF_SECONDS_3" Type="Int32" />
+    <Property Name="TARGET_PATTERN_CD" Type="String" />
+    <Property Name="DEADLINE_DATE" Type="DateTime" />
+    <Property Name="FILING_DATE" Type="DateTime" />
+    <Property Name="TRADE_DESIGNATION" Type="String" />
+    <Property Name="ADVERTISERS_CD" Type="String" />
+    <Property Name="TAKE_HOW_KBN" Type="String" />
+    <Property Name="HOUSEHOLD_TOSHIZU_TYPE_SIZE_YEAR" Type="Int32" />
+    <Property Name="HOUSEHOLD_TOSHIZU_TYPE_SIZE" Type="Int32" />
+    <Property Name="HOUSEHOLD_TOSHIZU_TYPE_SIZE_DATE" Type="DateTime" />
+    <Property Name="HOUSEHOLD_TOSHIZU_TYPE_KBN" Type="String" />
+    <Property Name="HOUSEHOLD_TOSHIZU_TIME_KBN" Type="String" />
+    <Property Name="HOUSEHOLD_OTHER_TYPE_SIZE_DATE" Type="DateTime" />
+    <Property Name="HOUSEHOLD_OTHER_TIME_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_TOHANMEI_TYPE_SIZE_YEAR" Type="Int32" />
+    <Property Name="INDIVIDUAL_TOHANMEI_TYPE_SIZE" Type="Int32" />
+    <Property Name="INDIVIDUAL_TOHANMEI_TYPE_SIZE_DATE" Type="DateTime" />
+    <Property Name="INDIVIDUAL_TOHANMEI_TYPE_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_KYUSHU_TYPE_SIZE_DATE" Type="DateTime" />
+    <Property Name="INDIVIDUAL_SATSUSHIZU_TYPE_SIZE_DATE" Type="DateTime" />
+    <Property Name="INDIVIDUAL_OTHER_TYPE_SIZE_DATE" Type="DateTime" />
+    <Property Name="INDIVIDUAL_OTHER_TIME_KBN" Type="String" />
+    <Property Name="WEIGHT_OF_30_SECONDS" Type="Decimal" />
+    <Property Name="HOUSEHOLD_TOSHIZU_USE_KBN" Type="String" />
+    <Property Name="HOUSEHOLD_TOSHIZU_REFERENCE_DATE" Type="DateTime" />
+    <Property Name="HOUSEHOLD_TOSHIZU_USE_DATE" Type="DateTime" />
+    <Property Name="INDIVIDUAL_TOMEI_METHOD_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_TOMEI_NUMBER_OF_TIMES" Type="Int32" />
+    <Property Name="INDIVIDUAL_KYUSHU_METHOD_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_KYUSHU_NUMBER_OF_TIMES" Type="Int32" />
+    <Property Name="INDIVIDUAL_SATSUSHIZU_METHOD_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_SATSUSHIZU_NUMBER_OF_TIMES" Type="Int32" />
+    <Property Name="INDIVIDUAL_OTHER_METHOD_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_OTHER_NUMBER_OF_TIMES" Type="Int32" />
+    <Property Name="REMARKS" Type="String" />
+    <Property Name="PROGRAM_NM" Type="String" />
+    <Property Name="NET_SERIES" Type="String" />
+    <Property Name="CREATED_DATE" Type="DateTime" />
+    <Property Name="HANDLING_CLASSIFICATION_KBN" Type="String" />
+    <Property Name="RATES_KBN" Type="String" />
+    <Property Name="ORIGINATING_STATION_CD" Type="String" />
+    <Property Name="TYPE_KBN" Type="String" />
+    <Property Name="CM_TYPE_KBN" Type="String" />
+    <Property Name="PROGRESSIVE_WAY_KBN" Type="String" />
+    <Property Name="COOPERATION_STATE_KBN" Type="String" />
+    <Property Name="TARGET_VIEWING_CD1" Type="String" />
+    <Property Name="TARGET_VIEWING_CD2" Type="String" />
+    <Property Name="TARGET_VIEWING_CD3" Type="String" />
+    <Property Name="TARGET_VIEWING_CD4" Type="String" />
+    <Property Name="BROADCASTING_STATION_NUMBER" Type="Int32" />
+    <Property Name="SONOTA_HEAD_NUM1" Type="Decimal" />
+    <Property Name="HANDLING_CLASSIFICATION" Type="String" />
+    <Property Name="OLD_CONTACT_FORM_NUMBER" Type="String" />
+    <Property Name="TRANSMISSION_STATUS" Type="String" />
+    <Property Name="MOD_VR_PERIOD_START" Type="DateTime" />
+    <Property Name="MOD_VR_PERIOD_END" Type="DateTime" />
+    <Property Name="PERIOD_CHANGE_FLG" Type="String" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ord_contact_form_data_target">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="CONTACT_FORM_NUMBER" />
+      <PropertyRef Name="DRAFT_LEVEL_ID" />
+      <PropertyRef Name="VIEWING_RATE_TARGET_CD" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="CONTACT_FORM_NUMBER" Type="String" Nullable="false" />
+    <Property Name="DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="VIEWING_RATE_TARGET_CD" Type="String" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ord_station_data">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="CONTACT_FORM_NUMBER" />
+      <PropertyRef Name="DRAFT_LEVEL_ID" />
+      <PropertyRef Name="BROADCASTING_STATION_CD" />
+      <PropertyRef Name="STATION_DRAFT_LEVEL_ID" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="CONTACT_FORM_NUMBER" Type="String" Nullable="false" />
+    <Property Name="DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="BROADCASTING_STATION_CD" Type="String" Nullable="false" />
+    <Property Name="STATION_DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="DISPLAY_LEVEL_FLG" Type="String" />
+    <Property Name="REGULAR_FEE_YEARS" Type="Int32" />
+    <Property Name="REGULAR_FEE_SPECIAL_FLG" Type="String" />
+    <Property Name="REGULAR_FEE" Type="Decimal" />
+    <Property Name="IMPLEMENTATION_FEE" Type="Decimal" />
+    <Property Name="IMPLEMENTATION_RATE" Type="Decimal" />
+    <Property Name="SUBMISSION_FEE" Type="Decimal" />
+    <Property Name="CONFIRM_DEGREE_KBN" Type="String" />
+    <Property Name="WEIGHT_OF_30_SECONDS" Type="Decimal" />
+    <Property Name="BROADCAST_PERIOD_START" Type="DateTime" />
+    <Property Name="BROADCAST_PERIOD_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_1_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_1_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_2_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_2_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_3_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_3_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_4_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_4_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_5_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_5_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_6_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_6_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_7_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_7_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_8_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_8_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_9_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_9_END" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_10_START" Type="DateTime" />
+    <Property Name="IMPLEMENTATION_PERIOD_10_END" Type="DateTime" />
+    <Property Name="HOUSEHOLD_SURVEY_DATE" Type="DateTime" />
+    <Property Name="HOUSEHOLD_START_DATE" Type="DateTime" />
+    <Property Name="HOUSEHOLD_TYPE_KBN" Type="String" />
+    <Property Name="INDIVIDUAL_SURVEY_DATE" Type="DateTime" />
+    <Property Name="INDIVIDUAL_TYPE_KBN" Type="String" />
+    <Property Name="TIME_RANK_HANDLING_KBN" Type="String" />
+    <Property Name="TIME_RANK_YEARS" Type="Int32" />
+    <Property Name="TIME_RANK_SPECIAL_FLG" Type="String" />
+    <Property Name="SUNDAY_HANDLING_NATIONAL_HOLIDAY_FLG" Type="String" />
+    <Property Name="COMMISSION_RATE" Type="Decimal" />
+    <Property Name="BROADCASTING_STATION_WITNESS_NUMBER" Type="String" />
+    <Property Name="CM_SCHEDULE_OUTPUT_DATE" Type="DateTime" />
+    <Property Name="STATION_SYMBOL" Type="String" />
+    <Property Name="AREA_CD" Type="String" />
+    <Property Name="BROADCAST_TIME_STAMP" Type="String" />
+    <Property Name="TRANSMISSION_STATUS" Type="String" />
+    <Property Name="STATION_DRAFT_ERR_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_MONDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_TUESDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_WEDNESDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_THURSDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_FRIDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_SATURDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY_SUNDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_MONDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_TUESDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_WEDNESDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_THURSDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_FRIDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_SATURDAY_FLG" Type="String" />
+    <Property Name="BROADCAST_DAY2_SUNDAY_FLG" Type="String" />
+    <Property Name="AIRTIME_START" Type="Int32" />
+    <Property Name="AIRTIME_END" Type="Int32" />
+    <Property Name="HATYU_DENPYO_LNO" Type="Int32" />
+    <Property Name="PAYEE_CD" Type="String" />
+    <Property Name="KYK_JISSI_WEEK_PTN_CD" Type="String" />
+    <Property Name="KYK_JISSI_CALC_KB" Type="String" />
+    <Property Name="BROADCAST_MONTHLY_CNT01" Type="Int64" />
+    <Property Name="BROADCAST_MONTHLY_CNT02" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT03" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT04" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT05" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT06" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT07" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT08" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT09" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT10" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT11" Type="Int32" />
+    <Property Name="BROADCAST_MONTHLY_CNT12" Type="Int32" />
+    <Property Name="BIKO_1" Type="String" />
+    <Property Name="BIKO_2" Type="String" />
+    <Property Name="BIKO_3" Type="String" />
+    <Property Name="SONOTA_LINE_NUM1" Type="Int32" />
+    <Property Name="TOTAL_NUMBER_OF_SECOND" Type="Decimal" />
+    <Property Name="SONOTA_LINE_CD1" Type="String" />
+    <Property Name="SONOTA_LINE_CD2" Type="String" />
+    <Property Name="SONOTA_LINE_CD3" Type="String" />
+    <Property Name="SONOTA_LINE_CD4" Type="String" />
+    <Property Name="SONOTA_LINE_CD5" Type="String" />
+    <Property Name="REGULAR_FEE_YEARS_NEW" Type="Int32" />
+    <Property Name="TIME_RANK_YEARS_NEW" Type="Int32" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ord_station_data_target">
+    <Key>
+      <PropertyRef Name="IDENTIFICATION_KBN" />
+      <PropertyRef Name="CONTACT_FORM_NUMBER" />
+      <PropertyRef Name="DRAFT_LEVEL_ID" />
+      <PropertyRef Name="BROADCASTING_STATION_CD" />
+      <PropertyRef Name="STATION_DRAFT_LEVEL_ID" />
+      <PropertyRef Name="VIEWING_RATE_TARGET_CD" />
+    </Key>
+    <Property Name="IDENTIFICATION_KBN" Type="String" Nullable="false" />
+    <Property Name="CONTACT_FORM_NUMBER" Type="String" Nullable="false" />
+    <Property Name="DRAFT_LEVEL_ID" Type="Boolean" Nullable="false" />
+    <Property Name="BROADCASTING_STATION_CD" Type="String" Nullable="false" />
+    <Property Name="STATION_DRAFT_LEVEL_ID" Type="Boolean" Nullable="false" />
+    <Property Name="VIEWING_RATE_TARGET_CD" Type="String" Nullable="false" />
+    <Property Name="GROSS_RATING_POINTS" Type="Decimal" />
+    <Property Name="A_TIME_GRP" Type="Decimal" />
+    <Property Name="PER_COST" Type="Decimal" />
+    <Property Name="COST_PER_MILLE" Type="Decimal" />
+    <Property Name="POPULATION" Type="Decimal" />
+    <Property Name="TOTAL_VIEWER_NUMBER" Type="Decimal" />
+    <Property Name="CONTENT_RATE" Type="Decimal" />
+    <Property Name="AVERAGE_VIEWING_RATE" Type="Decimal" />
+    <Property Name="A_TIME_AVERAGE_VIEWING_RATE" Type="Decimal" />
+    <Property Name="REACH" Type="Decimal" />
+    <Property Name="CUMULATIVE_REACH_NUMBER" Type="Decimal" />
+    <Property Name="FREQUENCY" Type="Decimal" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_airtime_data">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="CONTACT_FORM_NUMBER" />
+      <PropertyRef Name="DRAFT_LEVEL_ID" />
+      <PropertyRef Name="BROADCASTING_STATION_CD" />
+      <PropertyRef Name="STATION_DRAFT_LEVEL_ID" />
+      <PropertyRef Name="BROADCAST_DATE" />
+      <PropertyRef Name="DAY_KBN" />
+      <PropertyRef Name="START_TIME" />
+      <PropertyRef Name="SPOT_TYPE_KBN" />
+      <PropertyRef Name="SEQ" />
+      <PropertyRef Name="VIEWING_RATE_TARGET_CD" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="CONTACT_FORM_NUMBER" Type="String" Nullable="false" />
+    <Property Name="DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="BROADCASTING_STATION_CD" Type="String" Nullable="false" />
+    <Property Name="STATION_DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="BROADCAST_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="DAY_KBN" Type="String" Nullable="false" />
+    <Property Name="START_TIME" Type="Int32" Nullable="false" />
+    <Property Name="END_TIME" Type="Int32" />
+    <Property Name="SPOT_TYPE_KBN" Type="String" Nullable="false" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="VIEWING_RATE_TARGET_CD" Type="String" Nullable="false" />
+    <Property Name="VIEWING_RATE" Type="Decimal" />
+    <Property Name="CM_NUMBER_OF_SECONDS_1" Type="Int32" Nullable="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_airtime_data_expand">
+    <Key>
+      <PropertyRef Name="MEDIA_KBN" />
+      <PropertyRef Name="CONTACT_FORM_NUMBER" />
+      <PropertyRef Name="DRAFT_LEVEL_ID" />
+      <PropertyRef Name="BROADCASTING_STATION_CD" />
+      <PropertyRef Name="STATION_DRAFT_LEVEL_ID" />
+      <PropertyRef Name="BROADCAST_DATE" />
+      <PropertyRef Name="DAY_KBN" />
+      <PropertyRef Name="START_TIME" />
+      <PropertyRef Name="SPOT_TYPE_KBN" />
+      <PropertyRef Name="SEQ" />
+    </Key>
+    <Property Name="MEDIA_KBN" Type="String" Nullable="false" />
+    <Property Name="CONTACT_FORM_NUMBER" Type="String" Nullable="false" />
+    <Property Name="DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="BROADCASTING_STATION_CD" Type="String" Nullable="false" />
+    <Property Name="STATION_DRAFT_LEVEL_ID" Type="Int32" Nullable="false" />
+    <Property Name="BROADCAST_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="DAY_KBN" Type="String" Nullable="false" />
+    <Property Name="START_TIME" Type="Int32" Nullable="false" />
+    <Property Name="END_TIME" Type="Int32" />
+    <Property Name="SPOT_TYPE_KBN" Type="String" Nullable="false" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="WAK_SUB_NUMBER" Type="String" />
+    <Property Name="TIME_RANK_KBN" Type="String" />
+    <Property Name="TIME_RANK_KBN_EXCEPTION" Type="String" />
+    <Property Name="TIME_RANK_KBN_WRITE" Type="String" />
+    <Property Name="VIEWING_RATE" Type="Decimal" />
+    <Property Name="VIEWING_RATE_EXCEPTION" Type="Decimal" />
+    <Property Name="VIEWING_RATE_WRITE" Type="Decimal" />
+    <Property Name="VIEWING_RATE_EXCEPTION_TIME" Type="Int32" />
+    <Property Name="CM_NUMBER_OF_SECONDS_1" Type="Int32" />
+    <Property Name="MATERIAL_SYMBOL" Type="String" />
+    <Property Name="AIRTIME_KBN" Type="String" />
+    <Property Name="REGULAR_FEE" Type="Decimal" />
+    <Property Name="PAUSE_FLG" Type="String" />
+    <Property Name="PROGRAM_INFORMATION" Type="String" />
+    <Property Name="MOVE_REASON" Type="String" />
+    <Property Name="STATION_SYMBOL" Type="String" />
+    <Property Name="AREA_CD" Type="String" />
+    <Property Name="AIRTIME_CHAGE_FLG" Type="String" />
+    <Property Name="START_TIME_ERR_FLG" Type="String" />
+    <Property Name="BROADCAST_DATE_ERR_FLG" Type="String" />
+    <Property Name="OTHER_ERR_FLG" Type="String" />
+    <Property Name="SEQ_DENSOU" Type="Int32" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_USER" Type="String" Nullable="false" />
+    <Property Name="UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="UPDATE_USER" Type="String" Nullable="false" />
+    <Property Name="DELETE_FLG" Type="String" Nullable="false" />
+    <Property Name="VERSION" Type="Int64" Nullable="false" />
+  </EntityType>
+</Schema>

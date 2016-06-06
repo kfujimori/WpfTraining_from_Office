@@ -1,0 +1,11 @@
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\bin\Debug\mySQLSample2.exe
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\bin\Debug\mySQLSample2.pdb
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\mySQLSample2.Properties.Resources.resources
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\mySQLSample2.exe
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\mySQLSample2.pdb
+C:\dev\vs2010\wpf\mySQLSample2\mySQLSample2\obj\x86\Debug\mySQLSampl2.Form1.resources
+C:\dev\vs2010\wform\mySQLSample2\mySQLSample2\obj\x86\Debug\mySQLSample2.exe
+C:\dev\vs2010\wform\mySQLSample2\mySQLSample2\obj\x86\Debug\mySQLSample2.pdb

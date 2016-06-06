@@ -1,0 +1,13 @@
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\bin\Debug\ExceptionSample.exe
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\bin\Debug\ExceptionSample.pdb
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\MainWindow.baml
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\MainWindow.g.cs
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\App.g.cs
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\ExceptionSample_MarkupCompile.cache
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\ExceptionSample.g.resources
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\ExceptionSample.Properties.Resources.resources
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\ExceptionSample.exe
+C:\dev\vs2010\wpf\ExceptionSample\ExceptionSample\obj\x86\Debug\ExceptionSample.pdb
